@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Gutiérrez | Ingeniería + IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="gradient-bg"></div>
+    <div class="scroll-progress"></div>
+
+    <nav>
+        <div class="container nav-container">
+            <h2 class="logo">Guti<span>.dev</span></h2>
+            <div class="nav-links">
+                <a href="#sobre">Sobre mí</a>
+                <a href="#ia-workflow">IA Workflow</a>
+                <a href="#proyectos">Proyectos</a>
+                <button id="modoBtn" aria-label="Cambiar tema"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="hero reveal active"> <div class="container">
+                <div class="badge">AI-Enhanced Developer</div>
+                <h1>Ingeniería + <span class="text-gradient typewrite" data-period="2000" data-type='[ "Software", "IA", "Lógica", "Sistemas" ]'></span></h1>
+                <p class="hero-subtext">Transformando ideas en soluciones digitales funcionales y escalables.</p> <div class="hero-btns">
+                    <a href="#proyectos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Proyectos</a>
+                    <a href="https://github.com/alejose2050-afk" class="btn btn-github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="sobre" class="container reveal">
+            <div class="glass-section">
+                <h2>Sobre mí</h2>
+                <div class="sobre-content">
+                    <p>
+                        "Estudiante de Ingeniería Informática de 7mo semestre apasionado por la construcción de soluciones lógicas y eficientes. Mi formación se centra en el desarrollo de software, donde he pasado de la teoría a la práctica creando desde simulaciones de servidores hasta sistemas de bases de datos.
+
+Creo firmemente en la IA como un multiplicador de capacidades; la integro en mi flujo de trabajo para profundizar en conceptos complejos y optimizar mi código. Mi objetivo actual es consolidar mi dominio en Python y enfrentar retos que me permitan transformar la lógica en productos tecnológicos de alto valor."
+                    </p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" style="--brand-color: #3776ab;"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="tech-card" style="--brand-color: #00758f;"><i class="fas fa-database"></i><span>SQL</span></div>
+                    <div class="tech-card" style="--brand-color: #f7df1e;"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                    <div class="tech-card" style="--brand-color: #10a37f;"><i class="fas fa-robot"></i><span>AI Prompting</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ia-workflow" class="container reveal">
+            <h2 class="section-title">🤖 AI-Powered Workflow</h2>
+            <div class="glass-section ai-box">
+                <div class="ai-content">
+                    <p>Mi flujo de trabajo integra modelos generativos para elevar la calidad técnica:</p>
+                    <ul class="ai-list">
+                        <li><i class="fas fa-bolt"></i> <strong>Eficiencia:</strong> Generación de estructuras de código y lógica repetitiva.</li>
+                        <li><i class="fas fa-bug"></i> <strong>Optimización:</strong> Depuración asistida y refactorización de algoritmos.</li>
+                        <li><i class="fas fa-brain"></i> <strong>Análisis:</strong> Comprensión rápida de documentación y nuevas librerías.</li>
+                    </ul>
+                </div>
+                <div class="ai-visual">
+                    <div class="ai-chip">GitHub Copilot</div>
+                    <div class="ai-chip">Prompt Engineering</div>
+                    <div class="ai-chip">Model Integration</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container reveal">
+            <h2 class="section-title">🚀 Proyectos Destacados</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="js">JavaScript</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+
+            <div class="grid" id="projectGrid">
+                <div class="card" data-category="js">
+                    <div class="card-img-container"><img src="img/logic.png" alt="Logic Clash"></div> <div class="card-content">
+                        <h3>⚔️ Logic Clash</h3>
+                        <p>Juego interactivo con lógica dinámica optimizada con IA para la gestión de estados.</p>
+                        <div class="card-tags"><span>JS</span><span>Lógica</span></div>
+                        <a href="https://alejose2050-afk.github.io/Logic-Clash/" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Demo Live</a>
+                    </div>
+                </div>
+                <div class="card" data-category="python">
+                    <div class="card-img-container"><img src="img/server.png" alt="Server Monitor"></div> <div class="card-content">
+                        <h3>🖥️ Server Monitor</h3>
+                        <p>Simulación backend de monitorización de sistemas y servidores utilizando Python.</p>
+                        <div class="card-tags"><span>Python</span><span>Backend</span></div>
+                        <a href="https://github.com/alejose2050-afk/Server-Monitor" class="btn-card" target="_blank"><i class="fab fa-github"></i> Ver Código</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contacto" class="container reveal">
+
+    <div class="glass-section contact-box">
+        <p>¿Tienes un proyecto en mente o buscas un desarrollador con enfoque en IA?</p>
+        
+        <div class="contact-actions">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tu-correo@gmail.com" target="_blank" class="btn btn-primary">
+    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+</a>
+
+            <div class="email-wrapper" onclick="copyEmail()">
+                <span id="emailText">alejose2050@gmail.com</span>
+                <i class="far fa-copy"></i>
+                <span class="tooltip">¡Copiar!</span>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jose-gutierrez-126229360" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/alejose2050-afk" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 José Gutiérrez | Desarrollado con ❤️ e IA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
