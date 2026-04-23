@@ -41,9 +41,11 @@
                 <h2>Sobre mí</h2>
                 <div class="sobre-content">
                     <p>
-                        "Estudiante de Ingeniería Informática de 7mo semestre apasionado por la construcción de soluciones lógicas y eficientes. Mi formación se centra en el desarrollo de software, donde he pasado de la teoría a la práctica creando desde simulaciones de servidores hasta sistemas de bases de datos.
+                        <p>
+    "Estudiante de Ingeniería Informática de 7mo semestre, apasionado por construir soluciones lógicas que integran el mundo del software con la solidez del hardware. Mi formación me ha permitido pasar de la teoría a la práctica, creando desde sistemas de bases de datos y simulaciones de servidores hasta el (mantenimiento y optimización de infraestructura física de computo).
 
-Creo firmemente en la IA como un multiplicador de capacidades; la integro en mi flujo de trabajo para profundizar en conceptos complejos y optimizar mi código. Mi objetivo actual es consolidar mi dominio en Python y enfrentar retos que me permitan transformar la lógica en productos tecnológicos de alto valor."
+    Creo firmemente en la IA como un multiplicador de capacidades; la integro en mi flujo de trabajo para profundizar en conceptos complejos y refinar mi código. Mi enfoque actual combina el dominio de Python con mi capacidad técnica en soporte de hardware, permitiéndome transformar la lógica en productos tecnológicos de alto valor, funcionales desde su núcleo físico hasta su despliegue digital."
+</p>
                     </p>
                 </div>
                 <div class="tech-grid">
@@ -51,7 +53,9 @@ Creo firmemente en la IA como un multiplicador de capacidades; la integro en mi 
                     <div class="tech-card" style="--brand-color: #00758f;"><i class="fas fa-database"></i><span>SQL</span></div>
                     <div class="tech-card" style="--brand-color: #f7df1e;"><i class="fab fa-js"></i><span>JavaScript</span></div>
                     <div class="tech-card" style="--brand-color: #10a37f;"><i class="fas fa-robot"></i><span>AI Prompting</span></div>
+                    <div class="tech-card" style="--brand-color: #515151;"><i class="fas fa-tools"></i><span>Hardware & Soporte</span></div>
                 </div>
+        
             </div>
         </section>
 
@@ -74,33 +78,51 @@ Creo firmemente en la IA como un multiplicador de capacidades; la integro en mi 
             </div>
         </section>
 
-        <section id="proyectos" class="container reveal">
-            <h2 class="section-title">🚀 Proyectos Destacados</h2>
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="js">JavaScript</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-            </div>
+     <section id="proyectos" class="container reveal">
+    <h2 class="section-title">🚀 Proyectos & Servicios</h2>
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="hardware">Soporte</button>
+    </div>
 
-            <div class="grid" id="projectGrid">
-                <div class="card" data-category="js">
-                    <div class="card-img-container"><img src="img/logic.png" alt="Logic Clash"></div> <div class="card-content">
-                        <h3>⚔️ Logic Clash</h3>
-                        <p>Juego interactivo con lógica dinámica optimizada con IA para la gestión de estados.</p>
-                        <div class="card-tags"><span>JS</span><span>Lógica</span></div>
-                        <a href="https://alejose2050-afk.github.io/Logic-Clash/" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Demo Live</a>
-                    </div>
-                </div>
-                <div class="card" data-category="python">
-                    <div class="card-img-container"><img src="img/server.png" alt="Server Monitor"></div> <div class="card-content">
-                        <h3>🖥️ Server Monitor</h3>
-                        <p>Simulación backend de monitorización de sistemas y servidores utilizando Python.</p>
-                        <div class="card-tags"><span>Python</span><span>Backend</span></div>
-                        <a href="https://github.com/alejose2050-afk/Server-Monitor" class="btn-card" target="_blank"><i class="fab fa-github"></i> Ver Código</a>
-                    </div>
-                </div>
+    <div class="grid" id="projectGrid">
+        <div class="card" data-category="js">
+            <div class="card-img-container"><img src="img/logic.png" alt="Logic Clash"></div>
+            <div class="card-content">
+                <h3>⚔️ Logic Clash</h3>
+                <p>Juego interactivo con lógica dinámica optimizada con IA para la gestión de estados.</p>
+                <div class="card-tags"><span>JS</span><span>Lógica</span></div>
+                <a href="https://alejose2050-afk.github.io/Logic-Clash/" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Demo Live</a>
             </div>
-        </section>
+        </div>
+
+        <div class="card" data-category="python">
+            <div class="card-img-container"><img src="img/server.png" alt="Server Monitor"></div>
+            <div class="card-content">
+                <h3>🖥️ Server Monitor</h3>
+                <p>Simulación backend de monitorización de sistemas y servidores utilizando Python.</p>
+                <div class="card-tags"><span>Python</span><span>Backend</span></div>
+                <a href="https://github.com/alejose2050-afk/Server-Monitor" class="btn-card" target="_blank"><i class="fab fa-github"></i> Ver Código</a>
+            </div>
+        </div>
+
+        <div class="card" data-category="hardware">
+            <div class="card-img-container" style="display: flex; align-items: center; justify-content: center; background: rgba(0, 123, 255, 0.1); min-height: 180px;">
+                <i class="fas fa-tools" style="font-size: 4rem; color: #007bff;"></i>
+            </div>
+            <div class="card-content">
+                <h3>🛠️ Soporte & Hardware</h3>
+                <p>Mantenimiento preventivo y correctivo de equipos, diagnóstico de hardware y optimización de sistemas.</p>
+                <div class="card-tags"><span>Hardware</span><span>Soporte IT</span></div>
+                <span class="btn-card" style="background: transparent; border: 1px solid #007bff; color: #007bff; cursor: default;">
+                    <i class="fas fa-check-circle"></i> Servicio Activo
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <section id="contacto" class="container reveal">
