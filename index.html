@@ -1,160 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José Gutiérrez | Ingeniería + IA</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <div class="gradient-bg"></div>
-    <div class="scroll-progress"></div>
-
-    <nav>
-        <div class="container nav-container">
-            <h2 class="logo">Guti<span>.dev</span></h2>
-            <div class="nav-links">
-                <a href="#sobre">Sobre mí</a>
-                <a href="#ia-workflow">IA Workflow</a>
-                <a href="#proyectos">Proyectos</a>
-                <button id="modoBtn" aria-label="Cambiar tema"><i class="fas fa-moon"></i></button>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <header class="hero reveal active"> <div class="container">
-                <div class="badge">AI-Enhanced Developer</div>
-                <h1>Ingeniería + <span class="text-gradient typewrite" data-period="2000" data-type='[ "Software", "IA", "Lógica", "Sistemas" ]'></span></h1>
-                <p class="hero-subtext">Transformando ideas en soluciones digitales funcionales y escalables.</p> <div class="hero-btns">
-                    <a href="#proyectos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Proyectos</a>
-                    <a href="https://github.com/alejose2050-afk" class="btn btn-github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </header>
-
-        <section id="sobre" class="container reveal">
-            <div class="glass-section">
-                <h2>Sobre mí</h2>
-                <div class="sobre-content">
-                    <p>
-                        <p>
-    "Estudiante de Ingeniería Informática de 7mo semestre, apasionado por construir soluciones lógicas que integran el mundo del software con la solidez del hardware. Mi formación me ha permitido pasar de la teoría a la práctica, creando desde sistemas de bases de datos y simulaciones de servidores hasta el (mantenimiento y optimización de infraestructura física de computo).
-
-    Creo firmemente en la IA como un multiplicador de capacidades; la integro en mi flujo de trabajo para profundizar en conceptos complejos y refinar mi código. Mi enfoque actual combina el dominio de Python con mi capacidad técnica en soporte de hardware, permitiéndome transformar la lógica en productos tecnológicos de alto valor, funcionales desde su núcleo físico hasta su despliegue digital."
-</p>
-                    </p>
-                </div>
-                <div class="tech-grid">
-                    <div class="tech-card" style="--brand-color: #3776ab;"><i class="fab fa-python"></i><span>Python</span></div>
-                    <div class="tech-card" style="--brand-color: #00758f;"><i class="fas fa-database"></i><span>SQL</span></div>
-                    <div class="tech-card" style="--brand-color: #f7df1e;"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                    <div class="tech-card" style="--brand-color: #10a37f;"><i class="fas fa-robot"></i><span>AI Prompting</span></div>
-                    <div class="tech-card" style="--brand-color: #515151;"><i class="fas fa-tools"></i><span>Hardware & Soporte</span></div>
-                </div>
-        
-            </div>
-        </section>
-
-        <section id="ia-workflow" class="container reveal">
-            <h2 class="section-title">🤖 AI-Powered Workflow</h2>
-            <div class="glass-section ai-box">
-                <div class="ai-content">
-                    <p>Mi flujo de trabajo integra modelos generativos para elevar la calidad técnica:</p>
-                    <ul class="ai-list">
-                        <li><i class="fas fa-bolt"></i> <strong>Eficiencia:</strong> Generación de estructuras de código y lógica repetitiva.</li>
-                        <li><i class="fas fa-bug"></i> <strong>Optimización:</strong> Depuración asistida y refactorización de algoritmos.</li>
-                        <li><i class="fas fa-brain"></i> <strong>Análisis:</strong> Comprensión rápida de documentación y nuevas librerías.</li>
-                    </ul>
-                </div>
-                <div class="ai-visual">
-                    <div class="ai-chip">GitHub Copilot</div>
-                    <div class="ai-chip">Prompt Engineering</div>
-                    <div class="ai-chip">Model Integration</div>
-                </div>
-            </div>
-        </section>
-
-     <section id="proyectos" class="container reveal">
-    <h2 class="section-title">🚀 Proyectos & Servicios</h2>
-    <div class="filter-container">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="js">JavaScript</button>
-        <button class="filter-btn" data-filter="python">Python</button>
-        <button class="filter-btn" data-filter="hardware">Soporte</button>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José Gutiérrez | Ingeniería + IA</title>
+  <meta name="description" content="Portafolio de José Gutiérrez — Futuro Ingeniero en Informática (8.° semestre) con experiencia práctica en desarrollo web y aplicación de herramientas de IA.">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div class="app-wrapper paper-grid">
+   <header class="w-full border-b site-rule bg-[#f2efe7]/90 backdrop-blur-sm sticky top-0 z-50">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8"><a href="#inicio" class="focus-ring flex items-center gap-3 no-underline text-[#171717]"> <span class="canva-text mono flex h-9 w-9 items-center justify-center bg-[#171717] text-xs font-bold text-[#f2efe7]">G</span> <span class="canva-text mono text-[.67rem] font-bold tracking-[.12em]">Guti.dev</span> </a>
+     <nav aria-label="Navegación principal" class="flex items-center gap-4 sm:gap-7"><a href="#trabajo" class="canva-link nav-item focus-ring mono text-[.62rem] font-bold uppercase tracking-[.09em]">Proyectos</a> <a href="#metodo" class="canva-link nav-item focus-ring hidden mono text-[.62rem] font-bold uppercase tracking-[.09em] sm:inline">Sobre mí</a> <a href="#contacto" class="canva-link nav-item focus-ring mono text-[.62rem] font-bold uppercase tracking-[.09em]">Contacto</a>
+     </nav><span class="canva-tag hidden bg-[#d6ff3f] px-3 py-2 mono text-[.58rem] font-bold tracking-[.06em] md:inline">8vo Semestre | Buscando retos</span>
     </div>
-
-    <div class="grid" id="projectGrid">
-        <div class="card" data-category="js">
-            <div class="card-img-container"><img src="img/logic.png" alt="Logic Clash"></div>
-            <div class="card-content">
-                <h3>⚔️ Logic Clash</h3>
-                <p>Juego interactivo con lógica dinámica optimizada con IA para la gestión de estados.</p>
-                <div class="card-tags"><span>JS</span><span>Lógica</span></div>
-                <a href="https://alejose2050-afk.github.io/Logic-Clash/" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Demo Live</a>
-            </div>
+   </header>
+   <main>
+    <section id="inicio" aria-labelledby="hero-title" class="mx-auto max-w-7xl px-5 pb-16 pt-10 sm:px-8 sm:pb-24 sm:pt-16">
+     <div class="mb-12 flex items-center justify-between border-b border-[#171717] pb-3">
+      <p class="canva-text index-number">01</p>
+      <p class="canva-text mono text-[.62rem] tracking-[.08em]">PORTAFOLIO // 2026</p>
+     </div>
+     <div class="grid items-end gap-10 lg:grid-cols-[1.12fr_.88fr] lg:gap-16">
+      <div>
+       <p class="canva-text reveal mono text-[.68rem] font-bold uppercase tracking-[.12em] text-[#f0523d]">AI-Enhanced Developer</p>
+       <h1 id="hero-title" class="canva-text editorial hero-heading reveal delay-1 mt-6 max-w-4xl font-semibold">Ingeniería + <br/>Software, IA, Hardware.</h1>
+       <div class="reveal delay-2 mt-9 grid max-w-xl gap-7 border-l-4 border-[#171717] pl-5 sm:grid-cols-[1.3fr_.7fr]">
+        <p class="canva-text text-sm leading-7 text-[#514e47]">Transformando ideas en soluciones digitales funcionales y escalables.</p>
+        <p class="canva-text mono text-[.68rem] leading-5 text-[#77736a]">José Gutiérrez</p>
+       </div><a href="#trabajo" class="canva-button focus-ring reveal delay-3 mt-10 inline-flex items-center gap-3 bg-[#171717] px-5 py-4 mono text-[.68rem] font-bold uppercase tracking-[.08em] text-[#f2efe7] transition hover:bg-[#f0523d]"> Ver Proyectos <i data-lucide="arrow-down" width="16" height="16"></i> </a>
+      </div>
+      <div class="portrait-wrap reveal delay-2 mx-auto w-full max-w-md lg:ml-auto"><img src="https://github.com/alejose2050-afk.png" alt="José Gutiérrez" loading="lazy" class="canva-image portrait">
+       <div class="canva-card mt-0 grid grid-cols-[1fr_auto] gap-4 border border-t-0 border-[#171717] bg-[#f2efe7] p-4">
+        <p class="canva-text mono text-[.66rem] leading-5">Futuro Ingeniero en Informática (8.° semestre) con experiencia práctica en desarrollo web y aplicación de herramientas de IA.</p><span class="stamp">BUILD<br>
+         WITH<br>
+         CARE</span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section aria-label="Especialidades" class="w-full overflow-hidden border-y border-[#171717] bg-[#171717] py-4 text-[#d6ff3f]">
+     <div class="marquee-track flex items-center gap-7 mono text-sm font-bold uppercase tracking-[.08em]">
+      <span class="canva-text">PYTHON</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">JAVASCRIPT</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">SQL</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">HARDWARE</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">GIT</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">AI PROMPTING</span><span aria-hidden="true">✳</span>
+      <span class="canva-text">PYTHON</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">JAVASCRIPT</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">SQL</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">HARDWARE</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">GIT</span><span aria-hidden="true">✳</span> 
+      <span class="canva-text">AI PROMPTING</span><span aria-hidden="true">✳</span>
+     </div>
+    </section>
+    <section id="trabajo" aria-labelledby="work-title" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
+     <div class="grid gap-7 border-b border-[#171717] pb-8 md:grid-cols-[.7fr_1.3fr] md:items-end">
+      <div>
+       <p class="canva-text index-number text-[#f0523d]">02</p>
+       <h2 id="work-title" class="canva-text editorial mt-3 font-semibold text-5xl">Proyectos y Servicios</h2>
+      </div>
+      <p class="canva-text max-w-xl text-sm leading-7 text-[#514e47]">Una selección de los proyectos más relevantes de mi carrera, donde he aplicado conocimientos de software, hardware y herramientas de inteligencia artificial.</p>
+     </div>
+     <div class="mt-10 grid gap-7 md:grid-cols-3">
+      <article class="canva-card project-card flex flex-col bg-[#f2efe7]">
+        <img src="img/inventario.jpg" alt="Sistema de Inventario" loading="lazy" class="canva-image project-image">
+       <div class="flex flex-1 flex-col p-5">
+        <div class="flex items-start justify-between gap-3">
+         <p class="canva-text index-number text-[#f0523d]">PROYECTO 1</p>
+         <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#77736a]">FULL-STACK</p>
         </div>
-
-        <div class="card" data-category="python">
-            <div class="card-img-container"><img src="img/server.png" alt="Server Monitor"></div>
-            <div class="card-content">
-                <h3>🖥️ Server Monitor</h3>
-                <p>Simulación backend de monitorización de sistemas y servidores utilizando Python.</p>
-                <div class="card-tags"><span>Python</span><span>Backend</span></div>
-                <a href="https://github.com/alejose2050-afk/Server-Monitor" class="btn-card" target="_blank"><i class="fab fa-github"></i> Ver Código</a>
-            </div>
+        <h3 class="canva-text editorial mt-8 font-semibold text-2xl">Sistema de Inventario</h3>
+        <p class="canva-text mt-4 text-sm leading-6 text-[#514e47]">Sistema web completo para la gestión de productos, control de stock y reportes. Interfaz diseñada para la facilidad de uso del personal.</p>
+        <div class="mt-auto pt-8">
+         <p class="canva-text mono text-[.62rem] leading-5 text-[#77736a]">HTML, CSS, JS, Python, SQL</p><a href="https://github.com/alejose2050-afk/sistema-inventario" target="_blank" class="canva-link focus-ring mt-5 inline-flex items-center gap-2 mono text-[.64rem] font-bold uppercase tracking-[.08em]">Ver Código <i data-lucide="arrow-right" width="12" height="12"></i></a>
         </div>
-
-        <div class="card" data-category="hardware">
-            <div class="card-img-container" style="display: flex; align-items: center; justify-content: center; background: rgba(0, 123, 255, 0.1); min-height: 180px;">
-                <i class="fas fa-tools" style="font-size: 4rem; color: #007bff;"></i>
-            </div>
-            <div class="card-content">
-                <h3>🛠️ Soporte & Hardware</h3>
-                <p>Mantenimiento preventivo y correctivo de equipos, diagnóstico de hardware y optimización de sistemas.</p>
-                <div class="card-tags"><span>Hardware</span><span>Soporte IT</span></div>
-                <span class="btn-card" style="background: transparent; border: 1px solid #007bff; color: #007bff; cursor: default;">
-                    <i class="fas fa-check-circle"></i> Servicio Activo
-                </span>
-            </div>
+       </div>
+      </article>
+      <article class="canva-card project-card flex flex-col bg-[#d6ff3f]">
+        <img src="img/smartbalance.jpg" alt="SmartBalance" loading="lazy" class="canva-image project-image" style="object-fit: contain; padding: 10px; background: white;">
+       <div class="flex flex-1 flex-col p-5">
+        <div class="flex items-start justify-between gap-3">
+         <p class="canva-text index-number text-[#f0523d]">PROYECTO 2</p>
+         <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#514e47]">IoT / FULL-STACK</p>
         </div>
+        <h3 class="canva-text editorial mt-8 font-semibold text-2xl">SmartBalance (En desarrollo)</h3>
+        <p class="canva-text mt-4 text-sm leading-6 text-[#34342e]">Báscula inteligente que se comunica con una plataforma web para registrar el peso y estadísticas de los usuarios de forma automática e IoT.</p>
+        <div class="mt-auto pt-8">
+         <p class="canva-text mono text-[.62rem] leading-5 text-[#514e47]">React, Node.js, Arduino, MQTT</p><a href="https://github.com/alejose2050-afk/smartbalance" target="_blank" class="canva-link focus-ring mt-5 inline-flex items-center gap-2 mono text-[.64rem] font-bold uppercase tracking-[.08em]">Ver Código <i data-lucide="arrow-right" width="12" height="12"></i></a>
+        </div>
+       </div>
+      </article>
+      <article class="canva-card project-card flex flex-col bg-[#f0523d]">
+        <img src="img/kyobitech.jpg" alt="Kyobitech" loading="lazy" class="canva-image project-image">
+       <div class="flex flex-1 flex-col p-5">
+        <div class="flex items-start justify-between gap-3">
+         <p class="canva-text index-number text-[#f2efe7]">SERVICIO</p>
+         <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#f2efe7]">SOPORTE IT</p>
+        </div>
+        <h3 class="canva-text editorial mt-8 font-semibold text-2xl text-white">Soporte Kyobitech</h3>
+        <p class="canva-text mt-4 text-sm leading-6 text-[#301c18]">Mantenimiento preventivo y correctivo de equipos, diagnóstico de hardware y optimización de sistemas informáticos.</p>
+        <div class="mt-auto pt-8">
+         <p class="canva-text mono text-[.62rem] leading-5 text-[#301c18]">Hardware, Redes, Sistemas Operativos</p><span class="canva-link focus-ring mt-5 inline-flex items-center gap-2 mono text-[.64rem] font-bold uppercase tracking-[.08em] bg-white text-black px-2 py-1">Servicio Activo <i data-lucide="check-circle" width="12" height="12"></i></span>
+        </div>
+       </div>
+      </article>
+
+      <article class="canva-card project-card flex flex-col bg-[#171717] text-[#f2efe7]">
+        <img src="img/logic.png" alt="Logic Clash" loading="lazy" class="canva-image project-image">
+       <div class="flex flex-1 flex-col p-5">
+        <div class="flex items-start justify-between gap-3">
+         <p class="canva-text index-number text-[#d6ff3f]">PROYECTO 3</p>
+         <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#c7c4bd]">JUEGO / LÓGICA</p>
+        </div>
+        <h3 class="canva-text editorial mt-8 font-semibold text-2xl">Logic Clash</h3>
+        <p class="canva-text mt-4 text-sm leading-6 text-[#c7c4bd]">Juego de lógica para estudiantes de programación con desafíos algorítmicos. Enfocado en desarrollar el pensamiento computacional.</p>
+        <div class="mt-auto pt-8">
+         <p class="canva-text mono text-[.62rem] leading-5 text-[#c7c4bd]">Python, Pygame, Lógica</p><a href="https://github.com/alejose2050-afk/logic-clash" target="_blank" class="canva-link focus-ring mt-5 inline-flex items-center gap-2 mono text-[.64rem] font-bold uppercase tracking-[.08em] text-[#d6ff3f]">Ver Código <i data-lucide="arrow-right" width="12" height="12"></i></a>
+        </div>
+       </div>
+      </article>
+
+      <article class="canva-card project-card flex flex-col bg-[#c9c4b8]">
+        <img src="img/server.png" alt="Server Monitor" loading="lazy" class="canva-image project-image">
+       <div class="flex flex-1 flex-col p-5">
+        <div class="flex items-start justify-between gap-3">
+         <p class="canva-text index-number text-[#171717]">PROYECTO 4</p>
+         <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#514e47]">BACKEND</p>
+        </div>
+        <h3 class="canva-text editorial mt-8 font-semibold text-2xl">Server Monitor</h3>
+        <p class="canva-text mt-4 text-sm leading-6 text-[#34342e]">Simulación backend de monitorización de sistemas y servidores utilizando Python.</p>
+        <div class="mt-auto pt-8">
+         <p class="canva-text mono text-[.62rem] leading-5 text-[#514e47]">Python, Backend, Scripts</p><a href="https://github.com/alejose2050-afk/server-monitor" target="_blank" class="canva-link focus-ring mt-5 inline-flex items-center gap-2 mono text-[.64rem] font-bold uppercase tracking-[.08em]">Ver Código <i data-lucide="arrow-right" width="12" height="12"></i></a>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section id="metodo" aria-labelledby="method-title" class="border-y border-[#171717] bg-[#171717] text-[#f2efe7]">
+     <div class="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[.85fr_1.15fr]">
+      <div>
+       <p class="canva-text index-number text-[#d6ff3f]">03</p>
+       <h2 id="method-title" class="canva-text editorial mt-4 max-w-lg font-semibold text-5xl">Sobre mi enfoque</h2>
+       <p class="canva-text mt-7 max-w-md text-sm leading-7 text-[#c7c4bd]">Me apasiona diseñar software moderno, funcional y escalable, combinando fundamentos de ingeniería con las últimas tendencias tecnológicas. Mi meta es acelerar el ciclo de desarrollo y resolver problemas complejos.</p>
+      </div>
+      <div>
+       <article class="note-item grid gap-3 py-6 sm:grid-cols-[70px_1fr]">
+        <p class="canva-text mono text-xs text-[#d6ff3f]">01</p>
+        <div>
+         <h3 class="canva-text text-base font-bold">Flujo de Trabajo con IA (AI Workflow)</h3>
+         <p class="canva-text mt-2 max-w-lg text-sm leading-6 text-[#c7c4bd]">Utilizo herramientas como GitHub Copilot y Prompt Engineering para potenciar la generación de código, la refactorización de algoritmos y el análisis de documentación, logrando una eficiencia notable.</p>
+        </div>
+       </article>
+       <article class="note-item grid gap-3 py-6 sm:grid-cols-[70px_1fr]">
+        <p class="canva-text mono text-xs text-[#d6ff3f]">02</p>
+        <div>
+         <h3 class="canva-text text-base font-bold">Desarrollo Multi-capa</h3>
+         <p class="canva-text mt-2 max-w-lg text-sm leading-6 text-[#c7c4bd]">No solo me quedo en la lógica o en el diseño; comprendo todo el stack tecnológico, desde cómo se comporta el servidor hasta cómo reacciona la interfaz del cliente.</p>
+        </div>
+       </article>
+       <article class="note-item grid gap-3 border-b border-[#f2efe7] py-6 sm:grid-cols-[70px_1fr]">
+        <p class="canva-text mono text-xs text-[#d6ff3f]">03</p>
+        <div>
+         <h3 class="canva-text text-base font-bold">Solidez en Hardware</h3>
+         <p class="canva-text mt-2 max-w-lg text-sm leading-6 text-[#c7c4bd]">Mi experiencia en mantenimiento de equipos (Soporte Kyobitech) me otorga un entendimiento profundo del núcleo físico, permitiéndome integrar software con la solidez del hardware de forma efectiva.</p>
+        </div>
+       </article>
+      </div>
+     </div>
+    </section>
+    <section id="contacto" aria-labelledby="contact-title" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
+     <div class="canva-panel grid gap-10 border border-[#171717] bg-[#d6ff3f] p-7 sm:p-12 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div>
+       <p class="canva-text index-number">04</p>
+       <h2 id="contact-title" class="canva-text editorial mt-5 max-w-3xl font-semibold text-5xl">¿Trabajamos juntos?</h2><a href="mailto:alejose2050@gmail.com" class="canva-link focus-ring mt-8 inline-flex items-center gap-3 border-b-2 border-[#171717] pb-2 mono text-sm font-bold">alejose2050@gmail.com <i data-lucide="mail" width="16" height="16"></i></a>
+      </div>
+      <div class="flex flex-wrap gap-3 lg:justify-end">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-guti%C3%A9rrez-7a5ba0236/" target="_blank" rel="noopener noreferrer" class="canva-link focus-ring inline-flex items-center gap-2 border border-[#171717] px-4 py-3 mono text-[.65rem] font-bold uppercase tracking-[.08em] transition hover:bg-[#171717] hover:text-[#f2efe7]"><i data-lucide="linkedin" width="15" height="15"></i> LinkedIn</a> 
+        <a href="https://github.com/alejose2050-afk" target="_blank" rel="noopener noreferrer" class="canva-link focus-ring inline-flex items-center gap-2 border border-[#171717] px-4 py-3 mono text-[.65rem] font-bold uppercase tracking-[.08em] transition hover:bg-[#171717] hover:text-[#f2efe7]"><i data-lucide="github" width="15" height="15"></i> GitHub</a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="border-t border-[#171717]">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+     <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#77736a]">© 2026 JOSÉ GUTIÉRREZ</p>
+     <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#77736a]">DESARROLLADO CON ❤️ E IA</p>
     </div>
-</section>
-    </main>
-
-    <section id="contacto" class="container reveal">
-
-    <div class="glass-section contact-box">
-        <p>¿Tienes un proyecto en mente o buscas un desarrollador con enfoque en IA?</p>
-        
-        <div class="contact-actions">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tu-correo@gmail.com" target="_blank" class="btn btn-primary">
-    <i class="fas fa-paper-plane"></i> Enviar Mensaje
-</a>
-
-            <div class="email-wrapper" onclick="copyEmail()">
-                <span id="emailText">alejose2050@gmail.com</span>
-                <i class="far fa-copy"></i>
-                <span class="tooltip">¡Copiar!</span>
-            </div>
-        </div>
-
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/jose-gutierrez-126229360" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/alejose2050-afk" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </div>
-</section>
-
-    <footer>
-        <div class="container">
-            <p>© 2026 José Gutiérrez | Desarrollado con ❤️ e IA</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+   </footer>
+  </div>
+  <script src="script.js"></script>
+ </body>
 </html>
