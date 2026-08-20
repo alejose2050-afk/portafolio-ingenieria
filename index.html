@@ -265,12 +265,82 @@
         </div>
       </section>
     </main>
-    <footer class="border-t border-[#171717]">
-      <div
-        class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-        <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#77736a]">© 2026 JOSÉ GUTIÉRREZ</p>
-        <p class="canva-text mono text-[.6rem] uppercase tracking-[.08em] text-[#77736a]">DESARROLLADO CON ❤️ E IA</p>
+    <footer class="border-t border-[#171717] bg-[#f2efe7]">
+
+      <!-- Footer body -->
+      <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+        <div class="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr] md:gap-16">
+
+          <!-- Col 1: Identidad -->
+          <div>
+            <a href="#inicio" class="focus-ring inline-flex items-center gap-3 no-underline text-[#171717]">
+              <span class="mono flex h-10 w-10 items-center justify-center bg-[#171717] text-sm font-bold text-[#f2efe7]">G</span>
+              <span class="mono text-[.7rem] font-bold tracking-[.14em]">GUTI.DEV</span>
+            </a>
+            <p class="mt-5 max-w-xs text-[.78rem] leading-6 text-[#77736a]">
+              Futuro Ingeniero en Informática construyendo software moderno con fundamentos sólidos y herramientas de IA.
+            </p>
+            <!-- Badge disponibilidad -->
+            <div class="mt-6 inline-flex items-center gap-2 border border-[#171717] px-3 py-2 bg-[#d6ff3f]">
+              <span class="relative flex h-2 w-2">
+                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#171717] opacity-50"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-[#171717]"></span>
+              </span>
+              <span class="mono text-[.58rem] font-bold uppercase tracking-[.1em]">Disponible para oportunidades</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Navegación rápida -->
+          <div>
+            <p class="mono text-[.6rem] font-bold uppercase tracking-[.12em] text-[#f0523d] mb-5">Navegación</p>
+            <nav class="flex flex-col gap-3">
+              <a href="#inicio" class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="arrow-right" width="11" height="11"></i> Inicio
+              </a>
+              <a href="#trabajo" class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="arrow-right" width="11" height="11"></i> Proyectos
+              </a>
+              <a href="#metodo" class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="arrow-right" width="11" height="11"></i> Sobre mí
+              </a>
+              <a href="#contacto" class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="arrow-right" width="11" height="11"></i> Contacto
+              </a>
+            </nav>
+          </div>
+
+          <!-- Col 3: Contacto y redes -->
+          <div>
+            <p class="mono text-[.6rem] font-bold uppercase tracking-[.12em] text-[#f0523d] mb-5">Encuéntrame</p>
+            <div class="flex flex-col gap-3">
+              <a href="mailto:alejose2050@gmail.com"
+                class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="mail" width="11" height="11"></i> Email
+              </a>
+              <a href="https://github.com/alejose2050-afk" target="_blank" rel="noopener noreferrer"
+                class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="github" width="11" height="11"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/jose-gutierrez-126229360" target="_blank" rel="noopener noreferrer"
+                class="focus-ring nav-item mono text-[.68rem] font-bold uppercase tracking-[.08em] inline-flex items-center gap-2">
+                <i data-lucide="linkedin" width="11" height="11"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+      <!-- Footer strip -->
+      <div class="border-t border-[#c9c4b8]">
+        <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <p class="mono text-[.58rem] uppercase tracking-[.1em] text-[#77736a]">© 2026 JOSÉ GUTIÉRREZ — TODOS LOS DERECHOS RESERVADOS</p>
+          <p class="mono text-[.58rem] uppercase tracking-[.1em] text-[#77736a] inline-flex items-center gap-1">
+            DISEÑADO Y DESARROLLADO CON <i data-lucide="heart" width="10" height="10" class="text-[#f0523d]"></i> E IA
+          </p>
+        </div>
+      </div>
+
     </footer>
   </div>
   <script src="script.js"></script>
